@@ -1,9 +1,13 @@
+import Dummy from "./Components/Dummy";
+import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 
 function App() {
 	return (
-		<div className="bg-hero-bg min-h-screen">
+		<div>
 			<Navbar />
+			<Hero />
+			<Dummy />
 		</div>
 	);
 }

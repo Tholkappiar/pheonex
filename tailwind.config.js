@@ -6,6 +6,18 @@ export default {
 			backgroundImage: {
 				"hero-bg": "url('hero-bg.jpg')",
 			},
+			fontFamily: {
+				"Noto-Sans-JP": ["Noto Sans JP", "sans-serif"],
+			},
+			keyframes: {
+				"scale-up": {
+					"0%": { transform: "scale(1)" },
+					"100%": { transform: "scale(1.15)" },
+				},
+			},
+			animation: {
+				"scale-slow": "scale-up 15000ms ease-in-out forwards",
+			},
 		},
 	},
 	plugins: [],
