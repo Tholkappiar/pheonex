@@ -2,7 +2,7 @@ const Navbar = () => {
 	document.addEventListener("scroll", () => {
 		const header = document.getElementById("navBar");
 		const navGrowEffect = document.getElementById("navEffect");
-		if (window.scrollY > 50) {
+		if (window.scrollY > 0) {
 			header.classList.remove("bg-transparent");
 			header.classList.add("bg-white");
 			header.classList.remove("text-white");
@@ -44,7 +44,7 @@ const Navbar = () => {
 	return (
 		<div
 			id="navBar"
-			className="fixed w-full transition-all duration-500 ease-in-out text-white z-10"
+			className="fixed w-full transition-all duration-500 ease-in-out text-white z-20"
 		>
 			<div
 				id="navEffect"

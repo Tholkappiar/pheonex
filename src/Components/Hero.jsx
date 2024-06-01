@@ -1,7 +1,7 @@
 const Hero = () => {
 	return (
-		<div className="min-h-screen flex items-center relative  overflow-hidden select-none">
-			<div className="bg-hero-bg bg-center bg-no-repeat bg-cover bg-blend-overlay bg-black bg-opacity-55 h-full w-full text-black absolute z-0 animate-scale-slow"></div>
+		<div className="min-h-screen flex items-center relative overflow-hidden select-none">
+			<div className="bg-hero-bg bg-center bg-no-repeat bg-cover bg-blend-overlay bg-black bg-opacity-55 h-full w-full absolute z-0 animate-scale-slow"></div>
 			<div className="container mx-auto text-white p-10 sm:p-20 xl:p-48 mt-32 flex flex-col justify-center z-10">
 				<p className="text-2xl sm:text-3xl uppercase font-Noto-Sans-JP tracking-widest font-medium">
 					Graphics. Web. Digital.

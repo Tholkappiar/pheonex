@@ -12,11 +12,11 @@ export default {
 			keyframes: {
 				"scale-up": {
 					"0%": { transform: "scale(1)" },
-					"100%": { transform: "scale(1.15)" },
+					"100%": { transform: "scale(1.25)" },
 				},
 			},
 			animation: {
-				"scale-slow": "scale-up 15000ms ease-in-out forwards",
+				"scale-slow": "scale-up 20000ms ease-in-out forwards",
 			},
 		},
 	},
