@@ -28,15 +28,20 @@ const WhatWeDo = () => {
 		},
 	];
 	return (
-		<div className="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container w-1/2 mx-auto justify-center items-center my-32">
-			<div className="flex items-center justify-center">
-				<div className="h-[300px] w-[370px] flex flex-col justify-center rounded-lg p-4">
-					<div className="space-y-2 text-gray-500">
-						<p className="text-4xl font-light font-Noto-Sans-JP">WHAT WE DO</p>
-						<p className="font-bold text-5xl font-Noto-Sans-JP tex2t-gray-600">
+		<div className="gap-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 container p-4 sm:p-0 sm:w-3/4 mx-auto justify-center items-center my-8 md:my-32">
+			<div className="flex items-center md:justify-center ">
+				<div className="sm:h-[300px] sm:w-full sm:min-w-[250px] flex flex-col justify-center items-center rounded-lg sm:p-4">
+					<div className="text-gray-500">
+						<p className="text-2xl sm:text-3xl font-medium font-Noto-Sans-JP ">
+							WHAT WE DO{" "}
+							<span className="font-semibold underline decoration-dashed">
+								as
+							</span>
+						</p>
+						<p className="font-bold text-2xl sm:text-5xl font-Noto-Sans-JP text-gray-600 tracking-wider">
 							EXPERTS
 						</p>
-						<p className="text-gray-500 pt-4 pl-2">
+						<p className="text-gray-500 pt-2 italic">
 							We build digital solutions.
 						</p>
 					</div>
@@ -44,11 +49,9 @@ const WhatWeDo = () => {
 			</div>
 			{cards.map((card) => (
 				<div key={card.title} className="flex items-center justify-center">
-					<div className="h-[280px] w-[350px] bg-gray-100 flex flex-col justify-center items-center rounded-lg">
+					<div className="min-h-[300px] w-full min-w-[250px] bg-gray-100 flex flex-col justify-center items-center rounded-lg hover:bg-white hover:text-blue-600 hover:shadow-lg transition-all duration-500 ease-in-out">
 						<img src={card.image} alt="" className="size-16 mt-4" />
-						<p className="text-lg uppercase text-gray-600 font-Noto-Sans-JP">
-							{card.title}
-						</p>
+						<p className="text-lg uppercase font-Noto-Sans-JP">{card.title}</p>
 						<p className="text-center text-xs text-gray-600 mt-4 font-Noto-Sans-JP mx-2">
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Mollitia, quae.
