@@ -5,6 +5,7 @@ export default {
 		extend: {
 			backgroundImage: {
 				"hero-bg": "url('hero-bg.jpg')",
+				"big-01": "url('big02.jpg')",
 			},
 			fontFamily: {
 				"Noto-Sans-JP": ["Noto Sans JP", "sans-serif"],
