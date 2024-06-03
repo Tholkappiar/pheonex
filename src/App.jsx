@@ -1,3 +1,4 @@
+import CulturePage from "./Components/CulturePage";
 import Dummy from "./Components/Dummy";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
@@ -11,6 +12,7 @@ function App() {
 			<Hero />
 			<WhatWeDo />
 			<ParallaxEffect />
+			<CulturePage />
 			<Dummy />
 		</div>
 	);
