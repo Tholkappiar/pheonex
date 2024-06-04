@@ -72,7 +72,7 @@ export default function Navbar() {
 												href={item.href}
 												className={`rounded-md px-3 py-2 text-base font-medium 
 												${isScrolled ? "text-black" : "text-white"}
-												${item.current ? "bg-blue-500" : "hover:opacity-70 hover:text-white"}
+												${item.current ? "bg-indigo-500" : "hover:opacity-70 hover:text-white"}
 												`}
 												aria-current={item.current ? "page" : undefined}
 											>

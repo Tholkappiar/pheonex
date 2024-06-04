@@ -52,7 +52,7 @@ const WhatWeDo = () => {
 					<div className="min-h-[300px] w-full min-w-[250px] bg-gray-100 flex flex-col justify-center items-center rounded-lg hover:bg-white hover:text-blue-600 hover:shadow-lg transition-all duration-500 ease-in-out">
 						<img src={card.image} alt="" className="size-16 mt-4" />
 						<p className="text-lg uppercase font-Noto-Sans-JP">{card.title}</p>
-						<p className="text-center text-xs text-gray-600 mt-4 font-Noto-Sans-JP mx-2">
+						<p className="text-center text-xs text-gray-600 mt-4 font-Noto-Sans-JP mx-2 tracking-wider">
 							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
 							Mollitia, quae.
 						</p>
