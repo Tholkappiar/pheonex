@@ -24,7 +24,7 @@ export default function Navbar() {
 	}, []);
 
 	const navbarClasses = `bg-transparent fixed w-full z-20 transition-all duration-500 ease-in-out ${
-		isScrolled ? "bg-white text-black" : "text-white"
+		isScrolled ? "bg-white text-black shadow-md" : "text-white"
 	}`;
 
 	return (
@@ -36,7 +36,7 @@ export default function Navbar() {
 							!isScrolled && open ? "backdrop-blur-sm" : ""
 						}`}
 					>
-						<div className="relative flex h-16 items-center justify-between">
+						<div className="relative flex h-12 sm:h-16 items-center justify-between">
 							<div className="absolute inset-y-0 right-2 flex items-center md:hidden">
 								<DisclosureButton className="relative inline-flex items-center justify-center rounded-md p-2 text-white hover:opacity-60 hover:text-white">
 									<span className="absolute -inset-0.5" />
@@ -60,7 +60,7 @@ export default function Navbar() {
 							</div>
 							<div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
 								<div className="flex flex-shrink-0 items-center">
-									<p className="text-3xl font-semibold font-Noto-Sans-JP tracking-wide">
+									<p className="text-xl sm:text-3xl font-semibold font-Noto-Sans-JP tracking-wide">
 										Pheonex
 									</p>
 								</div>

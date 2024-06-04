@@ -26,7 +26,7 @@ const StoryPage = () => {
 		},
 	];
 	return (
-		<div className="h-screen container mx-auto text-gray-600 p-2">
+		<div className="container mx-auto text-gray-600 p-6 mb-20">
 			<p className="text-lg md:text-2xl lg:text-3xl font-Noto-Sans-JP uppercase font-light mt-10 md:mt-20 tracking-wider">
 				The Life Size
 			</p>
@@ -52,7 +52,7 @@ const StoryPage = () => {
 							laudantium, totam rem aperiam, eaque ip
 						</p>
 					</div>
-					<button className="bg-indigo-600 p-2 w-32 sm:w-40 rounded-lg text-white font-semibold mt-4 shadow-md hover:opacity-90">
+					<button className="bg-indigo-600 p-2 w-32 sm:w-40 rounded-lg text-white font-semibold mt-6 shadow-md hover:opacity-90">
 						View Projects
 					</button>
 				</div>

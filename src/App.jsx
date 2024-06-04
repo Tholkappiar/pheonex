@@ -1,4 +1,5 @@
 import CulturePage from "./Components/CulturePage";
+import Footer from "./Components/Footer";
 import Hero from "./Components/Hero";
 import Navbar from "./Components/Navbar";
 import ParallaxEffect from "./Components/ParallaxEffect";
@@ -14,6 +15,7 @@ function App() {
 			<ParallaxEffect />
 			<CulturePage />
 			<StoryPage />
+			<Footer />
 		</div>
 	);
 }

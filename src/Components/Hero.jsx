@@ -14,7 +14,7 @@ const Hero = () => {
 					autem maiores fugit aperiam vel alias corporis beatae est consequatur
 					magnam? Enim nulla fugiat cupiditate iusto?
 				</p>
-				<button className="p-3 my-10 font-mono font-medium text-xl bg-indigo-600 rounded-md shadow-lg w-44 sm:w-64 tracking-widest hover:opacity-90">
+				<button className="p-2 my-10 font-mono font-medium text-lg sm:text-xl bg-indigo-600 rounded-md shadow-lg w-36 sm:w-52 tracking-wider hover:opacity-90">
 					EXPLORE US
 				</button>
 			</div>

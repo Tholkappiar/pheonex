@@ -13,7 +13,7 @@ const CulturePage = () => {
 						Lovely people with knack for design creativity flourish here.
 					</p>
 				</div>
-				<div className="mt-14 lg:mt-16 w-full flex justify-center">
+				<div className="mt-6 lg:mt-16 w-full flex justify-center">
 					<p className="font-Noto-Sans-JP text-sm md:text-base lg:text-lg text-gray-700 text-center p-4 lg:w-1/2 tracking-wider">
 						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
 						beatae odit molestiae. Qui distinctio, corporis commodi ipsum omnis
