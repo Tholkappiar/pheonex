@@ -63,9 +63,12 @@ const StoryPage = () => {
 					</p>
 					<div className="text-indigo-600 text-sm uppercase mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
 						{links.map((link) => (
-							<p key={link.title} className="cursor-pointer">
-								{link.title}
-							</p>
+							<div key={link.title} className="group">
+								<p className="cursor-pointer group-hover:text-indigo-700">
+									{link.title}
+								</p>
+								<div className="bg-indigo-500 h-[2px] w-0 group-hover:w-full transition-all duration-300"></div>
+							</div>
 						))}
 					</div>
 				</div>

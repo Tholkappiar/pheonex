@@ -85,8 +85,8 @@ const Footer = () => {
 					</div>
 					<div className="px-4 py-6 bg-gray-100 dark:bg-gray-600 flex flex-col sm:flex-row justify-center font-semibold">
 						<span className="text-sm text-gray-500 dark:text-gray-300 text-center">
-							© 2023 <a href="https://flowbite.com/">Flowbite™</a>. All Rights
-							Reserved.
+							© 2023 <a href="https://flowbite.com/">Phenox Solutions™</a>. All
+							Rights Reserved.
 						</span>
 						<div className="flex mt-4 sm:mt-0 items-center justify-center space-x-5 rtl:space-x-reverse pl-4">
 							<a
