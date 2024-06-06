@@ -32,7 +32,7 @@ export default function Navbar() {
 			{({ open }) => (
 				<>
 					<div
-						className={`mx-auto max-w-7xl px-2 sm:px-6 lg:px-8 ${
+						className={`w-full px-4 sm:px-6 lg:px-8 ${
 							!isScrolled && open ? "backdrop-blur-sm" : ""
 						}`}
 					>
