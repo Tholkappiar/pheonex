@@ -1,8 +1,8 @@
-import pen from "../assets/pen.svg";
-import layer from "../assets/layer.svg";
-import bricks from "../assets/bricks.svg";
-import stack from "../assets/stack.svg";
-import cube from "../assets/cube.svg";
+import pen from "../../assets/pen.svg";
+import layer from "../../assets/layer.svg";
+import bricks from "../../assets/bricks.svg";
+import stack from "../../assets/stack.svg";
+import cube from "../../assets/cube.svg";
 
 const WhatWeDo = () => {
 	const cards = [

@@ -7,6 +7,7 @@ export default {
 				"hero-bg": "url('hero-bg.jpg')",
 				"big-01": "url('big01.jpg')",
 				"big-02": "url('big02.jpg')",
+				ServiceHero: "url('serviceHero.jpg')",
 			},
 			fontFamily: {
 				"Noto-Sans-JP": ["Noto Sans JP", "sans-serif"],

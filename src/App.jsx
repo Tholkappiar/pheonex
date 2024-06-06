@@ -1,9 +1,11 @@
+import ServiceHero from "./Components/Service/ServiceHero";
 import HomePage from "./Pages/HomePage";
 
 function App() {
 	return (
 		<div>
-			<HomePage />
+			{/* <HomePage /> */}
+			<ServiceHero />
 		</div>
 	);
 }
