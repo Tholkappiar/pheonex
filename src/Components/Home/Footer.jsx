@@ -4,7 +4,7 @@ const Footer = () => {
 			<footer className="bg-gray-600">
 				<div className="mx-auto w-full">
 					<div className="flex justify-center">
-						<div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3 m-6">
+						<div className="grid grid-cols-2 gap-8 px-4 py-6 lg:py-8 md:grid-cols-3 m-6 w-full justify-around text-center">
 							<div>
 								<h2 className="mb-6 text-sm font-semibold uppercase text-white">
 									Company
