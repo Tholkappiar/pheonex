@@ -58,7 +58,7 @@ export default function Navbar() {
 									)}
 								</DisclosureButton>
 							</div>
-							<div className="flex flex-1 items-center justify-center sm:items-stretch sm:justify-between">
+							<div className="flex flex-1 items-center justify-between sm:items-stretch">
 								<div className="flex flex-shrink-0 items-center">
 									<p className="text-xl sm:text-3xl font-semibold font-Noto-Sans-JP tracking-wide">
 										Pheonex Solutions

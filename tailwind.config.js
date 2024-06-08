@@ -20,6 +20,7 @@ export default {
 			},
 			animation: {
 				"scale-slow": "scale-up 20000ms ease-in-out forwards",
+				"spin-slow": "spin 15s linear infinite",
 			},
 		},
 	},
