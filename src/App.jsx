@@ -1,4 +1,6 @@
+import Footer from "./Components/Home/Footer";
 import Navbar from "./Components/Home/Navbar";
+import ComboOffers from "./Components/Service/ComboOffers";
 import ServiceHero from "./Components/Service/ServiceHero";
 import ServiceOverview from "./Components/Service/ServiceOverview";
 import Services from "./Components/Service/Services";
@@ -11,7 +13,9 @@ function App() {
 			<Navbar />
 			<ServiceHero />
 			<Services />
+			<ComboOffers />
 			<ServiceOverview />
+			<Footer />
 		</div>
 	);
 }
