@@ -9,21 +9,21 @@ import roundTrans from "../../assets/images/round-trans.png";
 
 const ServiceOverview = () => {
 	return (
-		<div className="h-screen text-gray-600">
+		<div className="text-gray-600">
 			<div className="flex flex-col items-center">
 				<p className="text-3xl sm:text-5xl font-Noto-Sans-JP font-bold">
 					Heading
 				</p>
-				<p className="text-base sm:text-lg italic font-Noto-Sans-JP sm:w-2/3 mt-4 sm:mt-8 text-center">
+				<p className="text-base sm:text-lg italic font-Noto-Sans-JP sm:w-2/3 mt-4 sm:mt-8 text-center p-4">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus,
 					dolorum mollitia
 				</p>
 			</div>
-			<div className="flex flex-col lg:flex-row justify-center items-center gap-56 lg:gap-12 text-center tracking-wider mt-32 relative">
+			<div className="flex flex-col lg:flex-row justify-center items-center gap-56 lg:gap-12 text-center tracking-wider mt-32 mb-64 relative">
 				<img
 					src={triangle}
 					alt=""
-					className="hidden sm:block absolute -bottom-40 left-36 lg:left-0 lg:top-36 lg:ml-40 animate-spin-slow"
+					className="hidden lg:block absolute lg:left-0 lg:top-36 lg:ml-40 animate-spin-slow"
 				/>
 				<div className="w-[170px] h-[170px]">
 					<div className="relative w-full h-full">
@@ -70,12 +70,12 @@ const ServiceOverview = () => {
 				<img
 					src={roundFill}
 					alt=""
-					className="hidden sm:block absolute top-0 right-20 lg:top-auto lg:right-0 lg:bottom-36 lg:mr-40 animate-spin-slow -z-20"
+					className="hidden lg:block absolute lg:top-auto lg:right-0 lg:bottom-36 lg:mr-40 animate-spin-slow -z-20"
 				/>
 				<img
 					src={roundTrans}
 					alt=""
-					className="hidden sm:block absolute top-0 right-20 lg:top-auto lg:right-0 lg:bottom-36 lg:mr-40 animate-spin-slow -z-10"
+					className="hidden lg:block absolute lg:top-auto lg:right-0 lg:bottom-36 lg:mr-40 animate-spin-slow -z-10"
 				/>
 			</div>
 		</div>

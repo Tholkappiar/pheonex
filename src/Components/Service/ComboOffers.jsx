@@ -37,8 +37,8 @@ const ComboOffers = () => {
 	];
 	return (
 		<div>
-			<section className="text-gray-600 body-font overflow-hidden">
-				<div className="container px-5 py-24 mx-auto">
+			<section className="text-gray-600 overflow-hidden">
+				<div className="container px-5 py-10 sm:py-24 mx-auto">
 					<div className="flex flex-col text-center w-full mb-20">
 						<h1 className="sm:text-4xl text-3xl font-medium title-font mb-2 text-gray-900">
 							Pricing
@@ -58,15 +58,15 @@ const ComboOffers = () => {
 									} flex flex-col relative overflow-hidden`}
 								>
 									{combo.type == "pro" && (
-										<span className="bg-indigo-500 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
+										<span className="bg-indigo-600 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
 											POPULAR
 										</span>
 									)}
 									<h2 className="uppercase text-sm tracking-widest title-font mb-1 font-medium">
 										{combo.type}
 									</h2>
-									<h1 className="uppercase text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
-										${combo.price}
+									<h1 className="capitalize text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
+										{combo.price == "free" ? combo.price : `$${combo.price}`}
 									</h1>
 									{combo.comboServices.map((service, index) => (
 										<p
