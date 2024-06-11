@@ -29,7 +29,7 @@ export default function Navbar() {
 
 	useEffect(() => {
 		// Set the routes where the background should be transparent
-		const transparentBgRoutes = ["/", "/service"];
+		const transparentBgRoutes = ["/"];
 
 		setIsBgTransparent(
 			transparentBgRoutes.includes(location.pathname) && !params.id

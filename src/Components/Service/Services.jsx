@@ -32,11 +32,11 @@ const Services = () => {
 	];
 
 	return (
-		<div className="text-gray-600 mt-20">
-			<p className="text-3xl sm:text-5xl font-Noto-Sans-JP font-bold text-center">
+		<div className="text-gray-600">
+			<p className="sm:text-4xl text-3xl font-bold title-font mb-2 font-Noto-Sans-JP text-center text-gray-900">
 				Services we DO
 			</p>
-			<div className="flex flex-col gap-20 justify-center items-center flex-wrap sm:flex-row my-20 text-center tracking-wider p-4">
+			<div className="flex flex-col gap-20 justify-center items-center flex-wrap sm:flex-row my-14 text-center tracking-wider p-4">
 				{services.map((service) => (
 					<div
 						key={service.title}
