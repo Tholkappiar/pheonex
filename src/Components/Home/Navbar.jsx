@@ -5,17 +5,21 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
+import { Link, useLocation, useParams } from "react-router-dom";
 
 const navigation = [
-	{ name: "Home", href: "#", current: true },
-	{ name: "Team", href: "#", current: false },
-	{ name: "About", href: "#", current: false },
-	{ name: "Contact", href: "#", current: false },
-	{ name: "Features", href: "#", current: false },
+	{ name: "Home", to: "/", current: false },
+	{ name: "Service", to: "/service", current: false },
+	{ name: "About", to: "/about", current: false },
+	{ name: "Contact", to: "/contact", current: false },
+	{ name: "Features", to: "/features", current: false },
 ];
 
 export default function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
+	const location = useLocation();
+	const params = useParams();
+	const [isBgTransparent, setIsBgTransparent] = useState(true);
 
 	useEffect(() => {
 		const handleScroll = () => setIsScrolled(window.scrollY > 100);
@@ -23,8 +27,19 @@ export default function Navbar() {
 		return () => window.removeEventListener("scroll", handleScroll);
 	}, []);
 
-	const navbarClasses = `bg-transparent fixed w-full z-20 transition-all duration-500 ease-in-out ${
-		isScrolled ? "bg-white text-black shadow-md" : "text-white"
+	useEffect(() => {
+		// Set the routes where the background should be transparent
+		const transparentBgRoutes = ["/", "/service"];
+
+		setIsBgTransparent(
+			transparentBgRoutes.includes(location.pathname) && !params.id
+		);
+	}, [location.pathname, params.id]);
+
+	const navbarClasses = `fixed top-0 w-full z-20 transition-all duration-500 ${
+		isScrolled || !isBgTransparent
+			? "bg-white text-black shadow-md"
+			: "text-white"
 	}`;
 
 	return (
@@ -44,14 +59,14 @@ export default function Navbar() {
 									{open ? (
 										<XMarkIcon
 											className={`block h-6 w-6 ${
-												isScrolled ? "text-black" : "text-white"
+												isScrolled ? "text-black" : ""
 											}`}
 											aria-hidden="true"
 										/>
 									) : (
 										<Bars3Icon
 											className={`block h-6 w-6 ${
-												isScrolled ? "text-black" : "text-white"
+												isScrolled ? "text-black" : ""
 											}`}
 											aria-hidden="true"
 										/>
@@ -67,17 +82,19 @@ export default function Navbar() {
 								<div className="hidden md:ml-6 md:block">
 									<div className="flex space-x-4">
 										{navigation.map((item) => (
-											<a
-												key={item.name}
-												href={item.href}
-												className={`rounded-md px-3 py-2 text-base font-medium hover:bg-indigo-600 
-												${isScrolled ? "text-black" : "text-white"}
-												${item.current ? "bg-indigo-500 text-white" : "hover:text-white"}
-												`}
-												aria-current={item.current ? "page" : undefined}
-											>
-												{item.name}
-											</a>
+											<Link to={item.to} key={item.name}>
+												<div
+													className={`rounded-md px-3 py-2 text-base text-center font-medium hover:bg-indigo-600 
+                                                ${
+																									item.current
+																										? "bg-indigo-500 text-white"
+																										: "hover:text-white"
+																								}`}
+													aria-current={item.current ? "page" : undefined}
+												>
+													{item.name}
+												</div>
+											</Link>
 										))}
 									</div>
 								</div>
@@ -92,17 +109,16 @@ export default function Navbar() {
 							}`}
 						>
 							{navigation.map((item) => (
-								<DisclosureButton
-									key={item.name}
-									as="a"
-									href={item.href}
-									className={`block rounded-md px-3 py-2 text-base text-center font-medium ${
-										item.current ? "" : "hover:opacity-70 hover:text-white"
-									} ${isScrolled ? "text-black" : "text-white"}`}
-									aria-current={item.current ? "page" : undefined}
-								>
-									{item.name}
-								</DisclosureButton>
+								<Link to={item.to} key={item.name}>
+									<DisclosureButton
+										className={`block rounded-md px-3 py-2 w-full text-base text-center font-medium ${
+											item.current ? "" : "hover:opacity-70 hover:text-white"
+										}`}
+										aria-current={item.current ? "page" : undefined}
+									>
+										{item.name}
+									</DisclosureButton>
+								</Link>
 							))}
 						</div>
 					</DisclosurePanel>

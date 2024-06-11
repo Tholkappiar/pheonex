@@ -92,7 +92,7 @@ const ComboOffers = () => {
 									<button
 										className={`capitalize flex items-center mt-auto text-white ${
 											combo.type == "pro" ? "bg-indigo-600" : "bg-gray-400"
-										} border-0 py-2 px-4 w-full focus:outline-none hover:bg-gray-500 rounded`}
+										} border-0 py-2 px-4 w-full hover:bg-opacity-90 focus:outline-none rounded`}
 									>
 										{combo.button}
 										<svg
