@@ -5,6 +5,7 @@ import Navbar from "./Components/Home/Navbar";
 import Footer from "./Components/Home/Footer";
 import { useEffect } from "react";
 import ErrorPage from "./Components/misc/ErrorPage";
+import ContactMap from "./Components/misc/ContactMap";
 
 function App() {
 	const ScrollToTop = (props) => {
@@ -27,6 +28,7 @@ function App() {
 				</Routes>
 			</ScrollToTop>
 			<Footer />
+			<ContactMap />
 		</BrowserRouter>
 	);
 }

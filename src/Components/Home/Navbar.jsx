@@ -5,7 +5,7 @@ import {
 } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { useEffect, useState } from "react";
-import { Link, useLocation, useParams } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const navigation = [
 	{ name: "Home", to: "/", current: false },
@@ -18,7 +18,6 @@ const navigation = [
 export default function Navbar() {
 	const [isScrolled, setIsScrolled] = useState(false);
 	const location = useLocation();
-	const params = useParams();
 	const [isBgTransparent, setIsBgTransparent] = useState(true);
 
 	useEffect(() => {
@@ -31,10 +30,8 @@ export default function Navbar() {
 		// Set the routes where the background should be transparent
 		const transparentBgRoutes = ["/"];
 
-		setIsBgTransparent(
-			transparentBgRoutes.includes(location.pathname) && !params.id
-		);
-	}, [location.pathname, params.id]);
+		setIsBgTransparent(transparentBgRoutes.includes(location.pathname));
+	}, [location.pathname]);
 
 	const navbarClasses = `fixed top-0 w-full z-20 transition-all duration-500 ${
 		isScrolled || !isBgTransparent
@@ -59,14 +56,14 @@ export default function Navbar() {
 									{open ? (
 										<XMarkIcon
 											className={`block h-6 w-6 ${
-												isScrolled ? "text-black" : ""
+												isScrolled || !isBgTransparent ? "text-black" : ""
 											}`}
 											aria-hidden="true"
 										/>
 									) : (
 										<Bars3Icon
 											className={`block h-6 w-6 ${
-												isScrolled ? "text-black" : ""
+												isScrolled || !isBgTransparent ? "text-black" : ""
 											}`}
 											aria-hidden="true"
 										/>
