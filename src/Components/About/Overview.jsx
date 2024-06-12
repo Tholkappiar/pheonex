@@ -7,19 +7,19 @@ import triangle from "../../assets/images/shape-tri.png";
 import roundFill from "../../assets/images/round-full.png";
 import roundTrans from "../../assets/images/round-trans.png";
 
-const ServiceOverview = () => {
+const Overview = () => {
 	return (
 		<div className="text-gray-600">
 			<div className="flex flex-col items-center">
-				<p className="text-3xl sm:text-5xl font-Noto-Sans-JP font-bold">
+				<p className="title-font sm:text-4xl text-3xl font-medium text-gray-900">
 					Heading
 				</p>
-				<p className="text-base sm:text-lg italic font-Noto-Sans-JP sm:w-2/3 mt-4 sm:mt-8 text-center p-4">
+				<p className="text-base sm:text-lg italic font-Noto-Sans-JP sm:w-2/3 text-center p-4">
 					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus,
 					dolorum mollitia
 				</p>
 			</div>
-			<div className="flex flex-col lg:flex-row justify-center items-center gap-56 lg:gap-12 text-center tracking-wider mt-32 mb-64 relative">
+			<div className="flex flex-col lg:flex-row justify-center items-center gap-56 lg:gap-12 text-center tracking-wider mt-24 mb-64 relative">
 				<img
 					src={triangle}
 					alt=""
@@ -82,4 +82,4 @@ const ServiceOverview = () => {
 	);
 };
 
-export default ServiceOverview;
+export default Overview;

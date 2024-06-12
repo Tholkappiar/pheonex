@@ -12,7 +12,6 @@ const navigation = [
 	{ name: "Service", to: "/service", current: false },
 	{ name: "About", to: "/about", current: false },
 	{ name: "Contact", to: "/contact", current: false },
-	{ name: "Features", to: "/features", current: false },
 ];
 
 export default function Navbar() {
@@ -76,7 +75,7 @@ export default function Navbar() {
 										Pheonex Solutions
 									</p>
 								</div>
-								<div className="hidden md:ml-6 md:block">
+								<div className="hidden md:ml-6 md:block px-4">
 									<div className="flex space-x-4">
 										{navigation.map((item) => (
 											<Link to={item.to} key={item.name}>

@@ -1,7 +1,10 @@
-export default function ContactMap() {
+export default function ContactUs() {
 	return (
-		<section className="text-gray-600 body-font relative">
-			<div className="container px-5 py-24 mx-auto flex sm:flex-nowrap flex-wrap">
+		<section className="text-gray-600 body-font relative mt-28">
+			<p className="text-gray-600 text-2xl sm:text-3xl text-center font-Noto-Sans-JP font-bold underline decoration-dashed tracking-wider">
+				Contact Us
+			</p>
+			<div className="container px-5 py-10 mx-auto flex sm:flex-nowrap flex-wrap">
 				<div className="lg:w-2/3 md:w-1/2 rounded-lg overflow-hidden sm:mr-10 sm:p-5 md:p-10 flex flex-col gap-4 md:flex-row items-end justify-start relative">
 					<iframe
 						width="100%"

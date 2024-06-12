@@ -5,7 +5,8 @@ import Navbar from "./Components/Home/Navbar";
 import Footer from "./Components/Home/Footer";
 import { useEffect } from "react";
 import ErrorPage from "./Components/misc/ErrorPage";
-import ContactMap from "./Components/misc/ContactMap";
+import ContactUs from "./Pages/ContactUs";
+import AboutUs from "./Pages/AboutUs";
 
 function App() {
 	const ScrollToTop = (props) => {
@@ -24,11 +25,12 @@ function App() {
 				<Routes>
 					<Route path="/" element={<HomePage />}></Route>
 					<Route path="/service" element={<ServicePage />}></Route>
+					<Route path="/contact" element={<ContactUs />}></Route>
+					<Route path="/about" element={<AboutUs />}></Route>
 					<Route path="*" element={<ErrorPage />} />
 				</Routes>
 			</ScrollToTop>
 			<Footer />
-			<ContactMap />
 		</BrowserRouter>
 	);
 }
