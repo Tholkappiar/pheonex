@@ -4,9 +4,9 @@ import ServicePage from "./Pages/ServicePage";
 import Navbar from "./Components/Home/Navbar";
 import Footer from "./Components/Home/Footer";
 import { useEffect } from "react";
-import ErrorPage from "./Components/misc/ErrorPage";
 import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
+import ErrorPage from "./Pages/ErrorPage";
 
 function App() {
 	const ScrollToTop = (props) => {
