@@ -1,4 +1,4 @@
-import ServiceHero from "../Components/Service/ServiceHero";
+// import ServiceHero from "../Components/Service/ServiceHero";
 import Services from "../Components/Service/Services";
 import ComboOffers from "../Components/Service/ComboOffers";
 import GalleryHero from "../Components/Service/GalleryHero";
@@ -8,7 +8,6 @@ const ServicePage = () => {
 		<>
 			{/* <ServiceHero /> */}
 			<GalleryHero />
-			{/* <ServiceOverview /> */}
 			<Services />
 			<ComboOffers />
 		</>

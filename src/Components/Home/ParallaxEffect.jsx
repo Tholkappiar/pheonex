@@ -6,7 +6,8 @@ const ParallaxEffect = () => {
 					BEST EVER DESIGN
 				</p>
 				<p className="text-2xl md:text-5xl font-bold font-Noto-Sans-JP tracking-wider text-center m-2">
-					Time to enhance your web presence!
+					Time to enhance your <span className="text-indigo-600">Digital</span>{" "}
+					presence!
 				</p>
 				<button className="w-36 md:w-52 bg-indigo-600 p-2 font-Noto-Sans-JP tracking-wider rounded-md my-8 hover:bg-opacity-90">
 					CONTACT US

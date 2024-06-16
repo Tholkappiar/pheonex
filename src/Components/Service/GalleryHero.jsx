@@ -1,62 +1,56 @@
+import { Link } from "react-router-dom";
+
 const GalleryHero = () => {
 	return (
-		<section className="text-gray-600 body-font mt-20">
-			<div className="container px-5 py-24 mx-auto flex flex-wrap">
-				<div className="lg:w-2/3 mx-auto">
-					<div className="flex flex-wrap w-full bg-gray-100 py-32 px-10 relative mb-4">
-						<img
-							alt="gallery"
-							className="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
-							src="https://dummyimage.com/820x340"
-						/>
-						<div className="text-center relative z-10 w-full">
-							<h2 className="text-2xl text-gray-900 font-medium title-font mb-2">
-								Shooting Stars
-							</h2>
-							<p className="leading-relaxed">
-								Skateboard +1 mustache fixie paleo lumbersexual.
-							</p>
+		<div>
+			<div className="relative px-6 pt-14 lg:px-8">
+				<div
+					className="absolute inset-x-0 -top-40 -z-10 overflow-hidden blur-3xl sm:-top-80"
+					aria-hidden="true"
+				>
+					<div
+						className="relative left-[calc(50% - 11rem)] aspect-w-1155 aspect-h-678 w-[36.125rem] -translate-x-1/2 rotate-30 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50% - 30rem)] sm:w-[72.1875rem]"
+						style={{
+							clipPath:
+								"polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+						}}
+					></div>
+				</div>
+				<div className="mx-auto max-w-2xl py-14 sm:py-28">
+					<div className="hidden sm:mb-8 sm:flex sm:justify-center">
+						<div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">
+							Discover how we innovate solutions.{" "}
+							<Link to="/about" className="font-semibold text-indigo-600">
+								<span className="absolute inset-0" aria-hidden="true"></span>
+								About us <span aria-hidden="true">&rarr;</span>
+							</Link>
 						</div>
 					</div>
-					<div className="flex flex-wrap -mx-2">
-						<div className="px-2 w-1/2">
-							<div className="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-								<img
-									alt="gallery"
-									className="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
-									src="https://dummyimage.com/542x460"
-								/>
-								<div className="text-center relative z-10 w-full">
-									<h2 className="text-xl text-gray-900 font-medium title-font mb-2">
-										Shooting Stars
-									</h2>
-									<p className="leading-relaxed">
-										Skateboard +1 mustache fixie paleo lumbersexual.
-									</p>
-								</div>
-							</div>
-						</div>
-						<div className="px-2 w-1/2">
-							<div className="flex flex-wrap w-full bg-gray-100 sm:py-24 py-16 sm:px-10 px-6 relative">
-								<img
-									alt="gallery"
-									className="w-full object-cover h-full object-center block opacity-25 absolute inset-0"
-									src="https://dummyimage.com/542x420"
-								/>
-								<div className="text-center relative z-10 w-full">
-									<h2 className="text-xl text-gray-900 font-medium title-font mb-2">
-										Shooting Stars
-									</h2>
-									<p className="leading-relaxed">
-										Skateboard +1 mustache fixie paleo lumbersexual.
-									</p>
-								</div>
-							</div>
-						</div>
+					<div className="text-center">
+						<h1 className="text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl">
+							Data to enrich your online business
+						</h1>
+						<p className="mt-6 text-lg leading-8 text-gray-600">
+							Empower your business with actionable insights and strategic data
+							utilization. Enhance user experiences, drive growth, and optimize
+							performance with our comprehensive data solutions.
+						</p>
 					</div>
 				</div>
+				<div
+					className="absolute inset-x-0 top-[calc(100% - 13rem)] -z-10 overflow-hidden blur-3xl sm:top-[calc(100% - 30rem)]"
+					aria-hidden="true"
+				>
+					<div
+						className="relative left-[calc(50% + 3rem)] aspect-w-1155 aspect-h-678 w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50% + 36rem)] sm:w-[72.1875rem]"
+						style={{
+							clipPath:
+								"polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)",
+						}}
+					></div>
+				</div>
 			</div>
-		</section>
+		</div>
 	);
 };
 

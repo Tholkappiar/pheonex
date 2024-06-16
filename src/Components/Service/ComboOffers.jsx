@@ -1,38 +1,34 @@
+import { Link } from "react-router-dom";
+
 const ComboOffers = () => {
 	const combos = [
 		{
-			type: "start",
-			price: "free",
-			comboServices: ["Web dev", "App dev"],
-			button: "button",
-			content: "Literally you probably haven't heard of them jean shorts.",
+			type: "Start",
+			price: "Free",
+			comboServices: ["Web dev"],
+			button: "Visit",
+			content: "Basic package to get you started.",
 		},
 		{
-			type: "pro",
+			type: "Pro",
 			price: "38",
-			comboServices: ["Web dev", "App dev", "Design"],
-			button: "button",
-			content: "Literally you probably haven't heard of them jean shorts.",
+			comboServices: ["Web dev", "App dev"],
+			button: "Visit",
+			content: "Enhanced package for professional needs.",
 		},
 		{
-			type: "business",
+			type: "Business",
 			price: "56",
-			comboServices: ["Web dev", "App dev", "Design", "Digital Marketing"],
-			button: "button",
-			content: "Literally you probably haven't heard of them jean shorts.",
+			comboServices: ["Web dev", "App dev", "Design"],
+			button: "Visit",
+			content: "Comprehensive package for growing businesses.",
 		},
 		{
-			type: "special",
+			type: "Special",
 			price: "72",
-			comboServices: [
-				"Web dev",
-				"App dev",
-				"Design",
-				"Digital Marketing",
-				"Mixtape chillwave tumeric",
-			],
-			button: "button",
-			content: "Literally you probably haven't heard of them jean shorts.",
+			comboServices: ["Web dev", "App dev", "Design", "Digital Marketing"],
+			button: "Visit",
+			content: "Custom package tailored for specific requirements.",
 		},
 	];
 	return (
@@ -44,7 +40,8 @@ const ComboOffers = () => {
 							Pricing
 						</h1>
 						<p className="lg:w-2/3 mx-auto leading-relaxed text-base text-gray-500">
-							Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical.
+							Our expertise spans across various domains, ensuring that we can
+							cater to a wide range of client needs.
 						</p>
 					</div>
 					<div className="flex flex-wrap -m-4">
@@ -52,12 +49,12 @@ const ComboOffers = () => {
 							<div key={combo.type} className="p-4 xl:w-1/4 md:w-1/2 w-full">
 								<div
 									className={`h-full p-6 rounded-lg border-2 ${
-										combo.type == "pro"
+										combo.type == "Pro"
 											? "border-indigo-600"
 											: "border-gray-300"
 									} flex flex-col relative overflow-hidden`}
 								>
-									{combo.type == "pro" && (
+									{combo.type == "Pro" && (
 										<span className="bg-indigo-600 text-white px-3 py-1 tracking-widest text-xs absolute right-0 top-0 rounded-bl">
 											POPULAR
 										</span>
@@ -66,7 +63,7 @@ const ComboOffers = () => {
 										{combo.type}
 									</h2>
 									<h1 className="capitalize text-5xl text-gray-900 pb-4 mb-4 border-b border-gray-200 leading-none">
-										{combo.price == "free" ? combo.price : `$${combo.price}`}
+										{combo.price == "Free" ? combo.price : `$${combo.price}`}
 									</h1>
 									{combo.comboServices.map((service, index) => (
 										<p
@@ -89,9 +86,10 @@ const ComboOffers = () => {
 											{service}
 										</p>
 									))}
-									<button
+									<Link
+										to="/contact"
 										className={`capitalize flex items-center mt-auto text-white ${
-											combo.type == "pro" ? "bg-indigo-600" : "bg-gray-400"
+											combo.type == "Pro" ? "bg-indigo-600" : "bg-gray-400"
 										} border-0 py-2 px-4 w-full hover:bg-opacity-90 focus:outline-none rounded`}
 									>
 										{combo.button}
@@ -106,7 +104,7 @@ const ComboOffers = () => {
 										>
 											<path d="M5 12h14M12 5l7 7-7 7"></path>
 										</svg>
-									</button>
+									</Link>
 									<p className="text-xs text-gray-500 mt-3">{combo.content}</p>
 								</div>
 							</div>

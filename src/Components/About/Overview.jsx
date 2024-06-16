@@ -12,11 +12,10 @@ const Overview = () => {
 		<div className="text-gray-600">
 			<div className="flex flex-col items-center">
 				<p className="title-font sm:text-4xl text-3xl font-medium text-gray-900">
-					Heading
+					Our Approach
 				</p>
 				<p className="text-base sm:text-lg italic font-Noto-Sans-JP sm:w-2/3 text-center p-4">
-					Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus,
-					dolorum mollitia
+					Discover how we leverage technology to drive innovation and growth.
 				</p>
 			</div>
 			<div className="flex flex-col lg:flex-row justify-center items-center gap-56 lg:gap-12 text-center tracking-wider mt-24 mb-64 relative">
@@ -33,8 +32,7 @@ const Overview = () => {
 						</div>
 					</div>
 					<p className="mt-16 lg:mt-20 text-center">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
-						laudantium!
+						From data-driven insights to actionable strategies.
 					</p>
 				</div>
 				<div className="hidden lg:flex items-center">
@@ -48,8 +46,7 @@ const Overview = () => {
 						</div>
 					</div>
 					<p className="mt-16 lg:mt-20 text-center">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
-						laudantium!
+						Leading-edge development tailored to your needs.
 					</p>
 				</div>
 				<div className="hidden lg:flex items-center">
@@ -63,8 +60,7 @@ const Overview = () => {
 						</div>
 					</div>
 					<p className="mt-16 lg:mt-20 text-center pb-28">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto,
-						laudantium!
+						Collaborative solutions that drive meaningful connections.
 					</p>
 				</div>
 				<img

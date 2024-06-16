@@ -10,9 +10,9 @@ const Hero = () => {
 					START-UP
 				</p>
 				<p className="w-full sm:w-[50%] font-Noto-Sans-JP tracking-wider leading-relaxed lg:tracking-widest lg:leading-loose">
-					Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis
-					autem maiores fugit aperiam vel alias corporis beatae est consequatur
-					magnam? Enim nulla fugiat cupiditate iusto?
+					At Pheonex Solutions, we are dedicated to providing cutting-edge
+					technology solutions that help businesses thrive in the digital age.
+					Our team of experts is ready to turn your vision into reality.
 				</p>
 				<button className="p-2 my-10 font-mono font-medium text-lg sm:text-xl bg-indigo-600 rounded-md shadow-lg w-36 sm:w-52 tracking-wider hover:opacity-90">
 					EXPLORE US

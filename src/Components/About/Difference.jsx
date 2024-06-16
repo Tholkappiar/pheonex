@@ -1,41 +1,41 @@
 const Difference = () => {
 	const sections = [
 		{
-			title: "Shooting Stars",
+			title: "Tailored Solutions",
 			description:
-				"Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+				"We specialize in creating digital solutions tailored to meet your unique business needs. From custom web development to strategic digital marketing, we ensure your goals are achieved.",
 		},
 		{
-			title: "The Catalyzer",
+			title: "Innovative Approach",
 			description:
-				"Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+				"Our innovative approach keeps us ahead in the digital landscape. Using cutting-edge technologies and creative strategies, we deliver impactful results for your business.",
 		},
 		{
-			title: "Neptune",
+			title: "Client-Centric Focus",
 			description:
-				"Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+				"With a strong client-centric focus, we prioritize understanding your objectives to exceed expectations. Our solutions are designed to align perfectly with your business goals.",
 		},
 		{
-			title: "Melanchole",
+			title: "Exceptional Quality",
 			description:
-				"Fingerstache flexitarian street art 8-bit waistcoat. Distillery hexagon disrupt edison bulbche.",
+				"Committed to delivering exceptional quality, our team ensures precision and attention to detail in every project, from design to deployment.",
 		},
 	];
+
 	return (
 		<section className="text-gray-600 body-font">
 			<div className="container px-5 m-20 mx-auto">
 				<div className="flex flex-col text-center w-full mb-20">
 					<h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
-						ROOF PARTY POLAROID
+						Digital Innovations
 					</h2>
 					<h1 className="sm:text-3xl text-2xl font-medium title-font mb-4 text-gray-900">
-						Master Cleanse Reliac Heirloom
+						Difference from Others
 					</h1>
 					<p className="lg:w-2/3 mx-auto leading-relaxed text-base">
-						Whatever cardigan tote bag tumblr hexagon brooklyn asymmetrical
-						gentrify, subway tile poke farm-to-table. Franzen you probably
-						havent heard of them man bun deep jianbing selfies heirloom prism
-						food truck ugh squid celiac humblebrag.
+						Discover what makes us different. We bring a unique blend of
+						expertise, creativity, and dedication to every project, ensuring
+						your success in the digital age.
 					</p>
 				</div>
 				<div className="flex flex-wrap">

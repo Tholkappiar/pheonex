@@ -7,24 +7,34 @@ import cube from "../../assets/cube.svg";
 const WhatWeDo = () => {
 	const cards = [
 		{
-			title: "Pixel Perfect",
+			title: "Web Development",
 			image: pen,
+			description:
+				"Creating responsive and engaging websites that meet your business needs.",
 		},
 		{
-			title: "VECTOR SHAPES",
+			title: "App Development",
 			image: layer,
+			description:
+				"Building user-friendly mobile applications for both Android and iOS platforms.",
 		},
 		{
-			title: "GOOGLE FONTS",
+			title: "Graphic Design",
 			image: bricks,
+			description:
+				"Designing visually appealing graphics and branding materials to make your brand stand out.",
 		},
 		{
-			title: "EASY LAYERS",
+			title: "Digital Marketing",
 			image: stack,
+			description:
+				"Implementing effective strategies to enhance your online presence and engagement.",
 		},
 		{
-			title: "BOOTSTRAP GRID",
+			title: "Training & Internships",
 			image: cube,
+			description:
+				"Providing comprehensive training programs and internships to help individuals develop their skills.",
 		},
 	];
 	return (
@@ -52,9 +62,8 @@ const WhatWeDo = () => {
 					<div className="min-h-[300px] w-full min-w-[250px] bg-gray-100 flex flex-col justify-center items-center rounded-lg hover:bg-white hover:text-blue-600 hover:shadow-lg transition-all duration-500 ease-in-out">
 						<img src={card.image} alt="" className="size-16 mt-4" />
 						<p className="text-lg uppercase font-Noto-Sans-JP">{card.title}</p>
-						<p className="text-center text-xs text-gray-600 mt-4 font-Noto-Sans-JP mx-2 tracking-wider">
-							Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-							Mollitia, quae.
+						<p className="text-center text-xs text-gray-600 mt-4 font-Noto-Sans-JP tracking-wider px-4">
+							{card.description}
 						</p>
 						<p className="uppercase text-black font-Noto-Sans-JP text-sm mt-10">
 							Learn More

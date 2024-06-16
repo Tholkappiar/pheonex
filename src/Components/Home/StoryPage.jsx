@@ -1,28 +1,24 @@
+import { Link } from "react-router-dom";
+
 const StoryPage = () => {
 	const links = [
 		{
-			title: "WEB & INTERACTIVE DESIGN",
-			path: "#",
+			title: "Web & Interactive Design",
 		},
 		{
-			title: "WEB APPLICATIONS",
-			path: "#",
+			title: "Web Applications",
 		},
 		{
-			title: "SOFTWARE DEVELOPMENT",
-			path: "#",
+			title: "Software Development",
 		},
 		{
-			title: "TECHNICAL DOCUMENTATION",
-			path: "#",
+			title: "Technical Documentation",
 		},
 		{
-			title: "WEB PROMOTIONS",
-			path: "#",
+			title: "Web Promotions",
 		},
 		{
-			title: "CONTENT MANAGEMENT",
-			path: "#",
+			title: "Content Management",
 		},
 	];
 	return (
@@ -34,41 +30,40 @@ const StoryPage = () => {
 				Brand Story
 			</p>
 			<p className="font-Noto-Sans-JP tracking-widest italic text-sm lg:text-lg mt-4 sm:mt-6">
-				View multiple content block layouts under features section.
+				View our diverse range of services and projects.
 			</p>
 			<div className="flex flex-col sm:flex-row gap-8 mt-10 sm:mt-20 gray tracking-wide sm:tracking-wider leading-6 sm:leading-8 w-11/12 text-gray-500 text-sm md:text-base lg:text-lg">
 				<div className="sm:w-1/2">
 					<div>
 						<p>
-							Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-							eiusmod tempor incididunt ut labore et dolore magnaal qua. Ut enim
-							ad minim veniam, quis nostrud exercitation ulla mco laboris nisi
-							ut aliquip ex ea commodo consequat.
+							Pheonex Solutions started with a vision to bridge the gap between
+							businesses and technology. We strive to deliver exceptional
+							digital solutions tailored to the unique needs of our clients.
 						</p>
 						<p className="mt-8">
-							Excepteur sint occaecat cupidatat non proident, sunt in culp a qui
-							officia deserunt mollit anim id est laborum. Sed ut per spiciatis
-							unde omnis iste natus error sit voluptatem accusan tium doloremque
-							laudantium, totam rem aperiam, eaque ip
+							Our journey is driven by innovation, dedication, and a passion for
+							excellence. From web development to digital marketing, we offer a
+							wide range of services designed to help businesses succeed in the
+							digital age.
 						</p>
 					</div>
 					<button className="bg-indigo-600 p-2 w-32 sm:w-40 rounded-lg text-white font-semibold mt-6 shadow-md hover:opacity-90">
-						View Projects
+						View Services
 					</button>
 				</div>
 				<div className="sm:w-1/2">
 					<p>
-						Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-						eiusmod tempor incididunt ut labore et dolore magna aliqua.
+						Discover the array of services we provide, each designed to cater to
+						the evolving needs of our clients.
 					</p>
 					<div className="text-indigo-600 text-sm uppercase mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
 						{links.map((link) => (
-							<div key={link.title} className="group">
+							<Link to="/service" key={link.title} className="group">
 								<p className="cursor-pointer group-hover:text-indigo-700">
 									{link.title}
 								</p>
 								<div className="bg-indigo-500 h-[2px] w-0 group-hover:w-full transition-all duration-300"></div>
-							</div>
+							</Link>
 						))}
 					</div>
 				</div>

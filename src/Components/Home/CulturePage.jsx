@@ -15,10 +15,11 @@ const CulturePage = () => {
 				</div>
 				<div className="mt-6 lg:mt-16 w-full flex justify-center">
 					<p className="font-Noto-Sans-JP text-sm md:text-base lg:text-lg text-gray-700 text-center p-4 lg:w-1/2 tracking-wider">
-						Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo
-						beatae odit molestiae. Qui distinctio, corporis commodi ipsum omnis
-						sapiente nisi, voluptatibus placeat, rem voluptatem ex ratione esse
-						nobis deserunt sunt.
+						At Pheonex Solutions, our workplace culture is built on
+						collaboration, innovation, and mutual respect. We believe that a
+						supportive and inclusive environment fosters creativity and drives
+						success. Our team members are encouraged to share ideas, take
+						initiative, and grow both personally and professionally.
 					</p>
 				</div>
 			</div>

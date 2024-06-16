@@ -10,8 +10,8 @@ const AboutUs = () => {
 			<AboutUsHero />
 			<HowLong />
 			<Difference />
-			<WeStarted />
 			<Overview />
+			<WeStarted />
 		</>
 	);
 };

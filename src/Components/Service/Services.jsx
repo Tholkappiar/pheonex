@@ -6,27 +6,27 @@ import digitalMarketing from "../../assets/digitalMarketing.svg";
 const Services = () => {
 	const services = [
 		{
-			title: "Web development",
+			title: "Web Development",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia, dicta suscipit culpa nesciunt tenetur?",
+				"Tailored web solutions for responsive, user-friendly websites. From e-commerce to custom applications, ensuring robust scalability.",
 			image: websiteDev,
 		},
 		{
-			title: "App development",
+			title: "App Development",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia, dicta suscipit culpa nesciunt tenetur?",
+				"Innovative mobile apps for Android and iOS to boost user engagement with seamless experiences.",
 			image: appDev,
 		},
 		{
 			title: "Graphic Design",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia, dicta suscipit culpa nesciunt tenetur?",
+				"Visually appealing designs that elevate your brand. From identities to marketing materials, stand out in the digital landscape.",
 			image: graphicDesign,
 		},
 		{
 			title: "Digital Marketing",
 			description:
-				"Lorem ipsum dolor sit amet consectetur adipisicing elit. Dignissimos officia, dicta suscipit culpa nesciunt tenetur?",
+				"Strategies that drive online growth and visibility. From SEO and PPC to social media management, reach your audience effectively.",
 			image: digitalMarketing,
 		},
 	];
@@ -46,7 +46,7 @@ const Services = () => {
 						<p className="my-2 font-semibold uppercase group-hover:text-indigo-600">
 							{service.title}
 						</p>
-						<p className="my-4 text-sm p-2">{service.description}</p>
+						<p className="my-4 text-sm p-3">{service.description}</p>
 					</div>
 				))}
 			</div>
