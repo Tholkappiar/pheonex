@@ -1,4 +1,49 @@
+import { useState } from "react";
+import emailjs from "@emailjs/browser";
+
 export default function ContactUs() {
+	const [contactForm, setContactForm] = useState({
+		name: "",
+		mobile: "",
+		service: "",
+		email: "",
+		message: "",
+	});
+	const [isSubmit, setIsSubmit] = useState(false);
+
+	const handleChange = (e) => {
+		const { name, value } = e.target;
+		setContactForm((prev) => ({
+			...prev,
+			[name]: value,
+		}));
+	};
+
+	const handleSubmit = (e) => {
+		e.preventDefault();
+		const serviceID = "service_cpyhgoc";
+		const templateID = "template_8ximsmh";
+		const userID = "-eMbkSbBRJJPs-LcW";
+		emailjs.send(serviceID, templateID, contactForm, userID).then(
+			(response) => {
+				console.log("SUCCESS!", response.status, response.text);
+				setContactForm({
+					name: "",
+					mobile: "",
+					service: "",
+					email: "",
+					message: "",
+				});
+				setIsSubmit(true);
+			},
+			(error) => {
+				console.log("FAILED...", error);
+				alert("Failed to send message. Please try again later.");
+				setIsSubmit(false);
+			}
+		);
+	};
+
 	return (
 		<section className="text-gray-600 body-font relative mt-28">
 			<p className="text-gray-600 text-2xl sm:text-3xl text-center font-Noto-Sans-JP font-bold underline decoration-dashed tracking-wider">
@@ -42,7 +87,10 @@ export default function ContactUs() {
 						</div>
 					</div>
 				</div>
-				<div className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0">
+				<form
+					onSubmit={handleSubmit}
+					className="lg:w-1/3 md:w-1/2 bg-white flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+				>
 					<h2 className="text-gray-900 text-lg mb-1 font-medium title-font">
 						Contact Us
 					</h2>
@@ -57,6 +105,8 @@ export default function ContactUs() {
 						<input
 							type="text"
 							id="name"
+							required
+							onChange={(e) => handleChange(e)}
 							name="name"
 							className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
 						/>
@@ -68,6 +118,8 @@ export default function ContactUs() {
 						<input
 							type="text"
 							id="mobile"
+							required
+							onChange={(e) => handleChange(e)}
 							name="mobile"
 							className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
 						/>
@@ -82,6 +134,8 @@ export default function ContactUs() {
 						<input
 							type="text"
 							id="service"
+							required
+							onChange={(e) => handleChange(e)}
 							name="service"
 							className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
 						/>
@@ -93,6 +147,8 @@ export default function ContactUs() {
 						<input
 							type="email"
 							id="email"
+							required
+							onChange={(e) => handleChange(e)}
 							name="email"
 							className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-gray-700 py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
 						/>
@@ -106,12 +162,19 @@ export default function ContactUs() {
 						</label>
 						<textarea
 							id="message"
+							onChange={(e) => handleChange(e)}
+							required
 							name="message"
 							className="w-full bg-white rounded border border-gray-300 focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-gray-700 py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
 						/>
 					</div>
-					<button className="text-white bg-indigo-500 border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg">
-						Submit
+					<button
+						type="submit"
+						className={`text-white ${
+							isSubmit ? "bg-green-500" : "bg-indigo-500"
+						} border-0 py-2 px-6 focus:outline-none hover:bg-indigo-600 rounded text-lg`}
+					>
+						{isSubmit ? "Submitted !" : "Submit"}
 					</button>
 					<p className="text-xs text-gray-500 mt-3">
 						We respect your privacy and will get back to you as soon as
@@ -166,7 +229,7 @@ export default function ContactUs() {
 							<path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
 						</svg>
 					</div>
-				</div>
+				</form>
 			</div>
 		</section>
 	);

@@ -65,9 +65,6 @@ const WhatWeDo = () => {
 						<p className="text-center text-xs text-gray-600 mt-4 font-Noto-Sans-JP tracking-wider px-4">
 							{card.description}
 						</p>
-						<p className="uppercase text-black font-Noto-Sans-JP text-sm mt-10">
-							Learn More
-						</p>
 					</div>
 				</div>
 			))}
