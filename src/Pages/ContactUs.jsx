@@ -1,5 +1,7 @@
 import { useState } from "react";
 import emailjs from "@emailjs/browser";
+import { Socials, emailJsCons } from "../util/Constants";
+import { Link } from "react-router-dom";
 
 export default function ContactUs() {
 	const [contactForm, setContactForm] = useState({
@@ -21,9 +23,9 @@ export default function ContactUs() {
 
 	const handleSubmit = (e) => {
 		e.preventDefault();
-		const serviceID = "service_cpyhgoc";
-		const templateID = "template_8ximsmh";
-		const userID = "-eMbkSbBRJJPs-LcW";
+		const serviceID = emailJsCons.serviceID;
+		const templateID = emailJsCons.templateID;
+		const userID = emailJsCons.userID;
 		emailjs.send(serviceID, templateID, contactForm, userID).then(
 			(response) => {
 				console.log("SUCCESS!", response.status, response.text);
@@ -43,6 +45,75 @@ export default function ContactUs() {
 			}
 		);
 	};
+
+	const icons = [
+		{
+			name: "Twitter",
+			url: Socials.Twitter,
+			svg: (
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					className="tabler-icon tabler-icon-brand-x size-5 text-muted dark:text-muted-dark hover:text-black"
+				>
+					<path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
+					<path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
+				</svg>
+			),
+		},
+		{
+			name: "LinkedIn",
+			url: Socials.LinkedIn,
+
+			svg: (
+				<svg
+					xmlns="http://www.w3.org/2000/svg"
+					width="24"
+					height="24"
+					viewBox="0 0 24 24"
+					fill="none"
+					stroke="currentColor"
+					strokeWidth="2"
+					strokeLinecap="round"
+					strokeLinejoin="round"
+					className="tabler-icon tabler-icon-brand-linkedin size-7 text-muted dark:text-muted-dark hover:text-indigo-600"
+				>
+					<path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
+					<path d="M8 11l0 5"></path>
+					<path d="M8 8l0 .01"></path>
+					<path d="M12 16l0 -5"></path>
+					<path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
+				</svg>
+			),
+		},
+		{
+			name: "Github",
+			url: Socials.Github,
+
+			svg: (
+				<svg
+					className="w-5 h-5"
+					aria-hidden="true"
+					xmlns="http://www.w3.org/2000/svg"
+					fill="currentColor"
+					viewBox="0 0 20 20"
+				>
+					<path
+						fillRule="evenodd"
+						d="M10 .333A9.911 9.911 0 0 0 6.866 19.65c.5.092.678-.215.678-.477 0-.237-.01-1.017-.014-1.845-2.757.6-3.338-1.169-3.338-1.169a2.627 2.627 0 0 0-1.1-1.451c-.9-.615.07-.6.07-.6a2.084 2.084 0 0 1 1.518 1.021 2.11 2.11 0 0 0 2.884.823c.044-.503.268-.973.63-1.325-2.2-.25-4.516-1.1-4.516-4.9A3.832 3.832 0 0 1 4.7 7.068a3.56 3.56 0 0 1 .095-2.623s.832-.266 2.726 1.016a9.409 9.409 0 0 1 4.962 0c1.89-1.282 2.717-1.016 2.717-1.016.366.83.402 1.768.1 2.623a3.827 3.827 0 0 1 1.02 2.659c0 3.807-2.319 4.644-4.525 4.889a2.366 2.366 0 0 1 .673 1.834c0 1.326-.012 2.394-.012 2.72 0 .263.18.572.681.475A9.911 9.911 0 0 0 10 .333Z"
+						clipRule="evenodd"
+					/>
+				</svg>
+			),
+		},
+	];
 
 	return (
 		<section className="text-gray-600 body-font relative mt-28">
@@ -180,54 +251,18 @@ export default function ContactUs() {
 						We respect your privacy and will get back to you as soon as
 						possible.
 					</p>
-					<div className="flex mx-auto mt-8 gap-4">
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							strokeWidth="2"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							className="tabler-icon tabler-icon-brand-x size-7 text-muted dark:text-muted-dark hover:text-black"
-						>
-							<path d="M4 4l11.733 16h4.267l-11.733 -16z"></path>
-							<path d="M4 20l6.768 -6.768m2.46 -2.46l6.772 -6.772"></path>
-						</svg>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							strokeWidth="2"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							className="tabler-icon tabler-icon-brand-linkedin size-7 text-muted dark:text-muted-dark hover:text-indigo-600"
-						>
-							<path d="M4 4m0 2a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v12a2 2 0 0 1 -2 2h-12a2 2 0 0 1 -2 -2z"></path>
-							<path d="M8 11l0 5"></path>
-							<path d="M8 8l0 .01"></path>
-							<path d="M12 16l0 -5"></path>
-							<path d="M16 16v-3a2 2 0 0 0 -4 0"></path>
-						</svg>
-						<svg
-							xmlns="http://www.w3.org/2000/svg"
-							width="24"
-							height="24"
-							viewBox="0 0 24 24"
-							fill="none"
-							stroke="currentColor"
-							strokeWidth="2"
-							strokeLinecap="round"
-							strokeLinejoin="round"
-							className="tabler-icon tabler-icon-brand-github size-7 text-muted dark:text-muted-dark hover:text-black"
-						>
-							<path d="M9 19c-4.3 1.4 -4.3 -2.5 -6 -3m12 5v-3.5c0 -1 .1 -1.4 -.5 -2c2.8 -.3 5.5 -1.4 5.5 -6a4.6 4.6 0 0 0 -1.3 -3.2a4.2 4.2 0 0 0 -.1 -3.2s-1.1 -.3 -3.5 1.3a12.3 12.3 0 0 0 -6.2 0c-2.4 -1.6 -3.5 -1.3 -3.5 -1.3a4.2 4.2 0 0 0 -.1 3.2a4.6 4.6 0 0 0 -1.3 3.2c0 4.6 2.7 5.7 5.5 6c-.6 .6 -.6 1.2 -.5 2v3.5"></path>
-						</svg>
+					<div className="flex mx-auto mt-8 gap-4 items-center justify-center">
+						{icons.map((icons) => (
+							<Link
+								key={icons.name}
+								target="_blank"
+								to={icons.url}
+								className="text-gray-400 hover:text-white"
+							>
+								{icons.svg}
+								<span className="sr-only">{icons.name}</span>
+							</Link>
+						))}
 					</div>
 				</form>
 			</div>
