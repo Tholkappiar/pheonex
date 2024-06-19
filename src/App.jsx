@@ -7,6 +7,7 @@ import { useEffect } from "react";
 import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
 import ErrorPage from "./Pages/ErrorPage";
+import WebDesign from "./Components/SubServices/WebDesign";
 
 function App() {
 	const ScrollToTop = (props) => {
@@ -19,18 +20,22 @@ function App() {
 	};
 
 	return (
+		// <BrowserRouter>
+		// 	<Navbar />
+		// 	<ScrollToTop>
+		// 		<Routes>
+		// 			<Route path="/" element={<HomePage />}></Route>
+		// 			<Route path="/service" element={<ServicePage />}></Route>
+		// 			<Route path="/contact" element={<ContactUs />}></Route>
+		// 			<Route path="/about" element={<AboutUs />}></Route>
+		// 			<Route path="*" element={<ErrorPage />} />
+		// 		</Routes>
+		// 	</ScrollToTop>
+		// 	<Footer />
+		// </BrowserRouter>
 		<BrowserRouter>
-			<Navbar />
-			<ScrollToTop>
-				<Routes>
-					<Route path="/" element={<HomePage />}></Route>
-					<Route path="/service" element={<ServicePage />}></Route>
-					<Route path="/contact" element={<ContactUs />}></Route>
-					<Route path="/about" element={<AboutUs />}></Route>
-					<Route path="*" element={<ErrorPage />} />
-				</Routes>
-			</ScrollToTop>
-			<Footer />
+			<WebDesign />
+			<ContactUs />
 		</BrowserRouter>
 	);
 }
