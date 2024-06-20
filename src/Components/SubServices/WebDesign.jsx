@@ -8,7 +8,7 @@ const WebDesign = () => {
 	return (
 		<div className="pt-40 container mx-auto">
 			<div className="w-full">
-				<p className="p-2 w-1/2 text-lg font-semibold text-white bg-blue-950 mx-auto rounded-lg m-4 text-center">
+				<p className="p-2 w-1/2 text-lg font-semibold text-white bg-indigo-800 mx-auto rounded-lg m-4 text-center">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit
 				</p>
 			</div>
@@ -86,7 +86,7 @@ const WebDesign = () => {
 							illo? Asperiores vel, neque veritatis assumenda soluta nisi
 							excepturi sunt dolorum perferendis nobis?
 						</p>
-						<p className="p-1 border-2 border-gray-200 font-Noto-Sans-JP text-gray-80000 inline-block rounded-xl text-sm">
+						<p className="py-1 px-2 border-2 border-gray-200 font-Noto-Sans-JP text-gray-80000 inline-block rounded-xl text-sm">
 							Contact us and learn more on Socials
 						</p>
 					</div>

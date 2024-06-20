@@ -8,6 +8,10 @@ import ContactUs from "./Pages/ContactUs";
 import AboutUs from "./Pages/AboutUs";
 import ErrorPage from "./Pages/ErrorPage";
 import WebDesign from "./Components/SubServices/WebDesign";
+import Service2 from "./Components/SubServices/Service2";
+import Service3 from "./Components/SubServices/Service3";
+import Service4 from "./Components/SubServices/Section4";
+import Service5 from "./Components/SubServices/Service5";
 
 function App() {
 	const ScrollToTop = (props) => {
@@ -35,6 +39,10 @@ function App() {
 		// </BrowserRouter>
 		<BrowserRouter>
 			<WebDesign />
+			<Service2 />
+			<Service5 />
+			{/* <Service3 />
+			<Service4 /> */}
 			<ContactUs />
 		</BrowserRouter>
 	);
