@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import Home from "../../assets/Home.svg";
 import bookmark from "../../assets/bookmark.svg";
 import person from "../../assets/person.svg";

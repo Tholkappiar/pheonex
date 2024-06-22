@@ -13,6 +13,8 @@ import Service3 from "./Components/SubServices/Service3";
 import Service4 from "./Components/SubServices/Section4";
 import Service5 from "./Components/SubServices/Service5";
 import Service6 from "./Components/SubServices/Service6";
+import Service7 from "./Components/SubServices/Service7";
+import Service8 from "./Components/SubServices/Service8";
 
 function App() {
 	const ScrollToTop = (props) => {
@@ -43,6 +45,8 @@ function App() {
 			<Service2 />
 			<Service5 />
 			<Service6 />
+			<Service8 />
+			<Service7 />
 			{/* <Service3 />
 			<Service4 /> */}
 			<ContactUs />

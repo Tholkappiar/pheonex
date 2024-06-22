@@ -56,11 +56,12 @@ const Service5 = () => {
 					<div className="mt-4">
 						<div className="flex items-center my-4">
 							<input
-								defaultChecked
+								checked
+								readOnly
 								id="checked-checkbox"
 								type="checkbox"
 								value=""
-								className="w-5 h-5 bg-green-500 border-green-600 rounded"
+								className="w-5 h-5 rounded accent-indigo-600"
 							/>
 							<label
 								htmlFor="checked-checkbox"
@@ -71,11 +72,12 @@ const Service5 = () => {
 						</div>
 						<div className="flex items-center my-4">
 							<input
-								defaultChecked
+								checked
+								readOnly
 								id="checked-checkbox"
 								type="checkbox"
 								value=""
-								className="w-5 h-5 bg-green-500 border-green-600 rounded"
+								className="w-5 h-5 rounded accent-indigo-600"
 							/>
 							<label
 								htmlFor="checked-checkbox"
@@ -86,11 +88,12 @@ const Service5 = () => {
 						</div>
 						<div className="flex items-center my-4">
 							<input
-								defaultChecked
+								checked
+								readOnly
 								id="checked-checkbox"
 								type="checkbox"
 								value=""
-								className="w-5 h-5 bg-green-500 border-green-600 rounded"
+								className="w-5 h-5 rounded accent-indigo-600"
 							/>
 							<label
 								htmlFor="checked-checkbox"
