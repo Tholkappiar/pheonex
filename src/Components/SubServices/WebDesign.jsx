@@ -13,9 +13,9 @@ const WebDesign = () => {
 				</p>
 			</div>
 			<div className="flex justify-between my-20">
-				<div className="w-1/2">
+				<div className="md:w-1/2 p-4">
 					<p className="text-base font-Noto-Sans-JP font-bold text-indigo-600">
-						<span className="mr-4">{"<"}</span>Back to the Service Page{" "}
+						<span className="mr-2">{"<"}</span>Back to the Service Page{" "}
 					</p>
 					<p className="text-xl font-semibold mt-10">Description</p>
 					<p className="indent-20 my-4 font-light leading-7">
@@ -91,7 +91,7 @@ const WebDesign = () => {
 						</p>
 					</div>
 				</div>
-				<div className="w-2/5">
+				<div className="w-2/5 hidden md:block">
 					<Masonry
 						columns={{ 640: 1, 1024: 2, 1280: 2 }}
 						gap={16}
