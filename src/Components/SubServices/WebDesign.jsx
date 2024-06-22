@@ -7,8 +7,8 @@ import growth from "../../assets/growth.svg";
 const WebDesign = () => {
 	return (
 		<div className="pt-40 container mx-auto">
-			<div className="w-full">
-				<p className="p-2 w-1/2 text-lg font-semibold text-white bg-indigo-800 mx-auto rounded-lg m-4 text-center">
+			<div className="m-4">
+				<p className="p-2 md:w-1/2 text-lg font-semibold text-white bg-indigo-800 mx-auto rounded-lg text-center">
 					Lorem ipsum dolor sit amet consectetur adipisicing elit
 				</p>
 			</div>

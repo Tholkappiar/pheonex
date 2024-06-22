@@ -4,7 +4,7 @@ import halfSpiral from "../../assets/images/halfSpiral.png";
 const Service5 = () => {
 	return (
 		<section className="text-gray-600 body-font">
-			<div className="container mx-auto flex px-5 py-14 flex-col xl:flex-row">
+			<div className="container mx-auto flex px-5 py-24 flex-col xl:flex-row">
 				<div className="h-[700px] w-full xl:h-[520px] xl:w-[500px] text-white bg-gray-300 bg-serviceBanner1 bg-center bg-no-repeat bg-cover rounded-lg flex flex-col gap-8 items-center justify-center relative">
 					<img
 						src={halfSpiral}
