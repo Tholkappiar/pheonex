@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const ParallaxEffect = () => {
 	return (
 		<div className="bg-big-02 h-[400px] bg-center bg-cover bg-fixed bg-no-repeat bg-black bg-opacity-55 bg-blend-overlay">
@@ -9,9 +10,11 @@ const ParallaxEffect = () => {
 					Time to enhance your <span className="text-indigo-600">Digital</span>{" "}
 					presence!
 				</p>
-				<button className="w-36 md:w-52 bg-indigo-600 p-2 font-Noto-Sans-JP tracking-wider rounded-md my-8 hover:bg-opacity-90">
-					CONTACT US
-				</button>
+				<Link to="/contact">
+          <button className="w-36 md:w-52 bg-indigo-600 p-2 font-Noto-Sans-JP tracking-wider rounded-md my-8 hover:bg-opacity-90">
+            CONTACT US
+          </button>
+        </Link>
 			</div>
 		</div>
 	);

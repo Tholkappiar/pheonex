@@ -4,23 +4,30 @@ const StoryPage = () => {
 	const links = [
 		{
 			title: "Web & Interactive Design",
+			path: "/wi",
 		},
 		{
 			title: "Web Applications",
+			path: "/webApplication",
 		},
 		{
 			title: "Software Development",
+			path: "/sd",
 		},
 		{
 			title: "Technical Documentation",
+			path: "/td",
 		},
 		{
 			title: "Web Promotions",
+			path: "/wp",
 		},
 		{
 			title: "Content Management",
+			path: "/cm",
 		},
 	];
+
 	return (
 		<div className="container mx-auto text-gray-600 p-6 mb-20">
 			<p className="text-lg md:text-2xl lg:text-3xl font-Noto-Sans-JP uppercase font-light mt-10 md:mt-20 tracking-wider">
@@ -47,9 +54,11 @@ const StoryPage = () => {
 							digital age.
 						</p>
 					</div>
-					<button className="bg-indigo-600 p-2 w-32 sm:w-40 rounded-lg text-white font-semibold mt-6 shadow-md hover:opacity-90">
-						View Services
-					</button>
+					<Link to="/service">
+            <button className="bg-indigo-600 p-2 w-32 sm:w-40 rounded-lg text-white font-semibold mt-6 shadow-md hover:opacity-90">
+              View Services
+            </button>
+          </Link>
 				</div>
 				<div className="sm:w-1/2">
 					<p>
@@ -58,7 +67,7 @@ const StoryPage = () => {
 					</p>
 					<div className="text-indigo-600 text-sm uppercase mt-8 grid grid-cols-1 sm:grid-cols-2 gap-4">
 						{links.map((link) => (
-							<Link to="/service" key={link.title} className="group">
+							<Link to={link.path} key={link.title} className="group">
 								<p className="cursor-pointer group-hover:text-indigo-700">
 									{link.title}
 								</p>
