@@ -2,7 +2,7 @@ const Service4 = () => {
 	return (
 		<section className="text-gray-600 body-font">
 			<div className="container px-5 py-15 mx-auto flex flex-wrap">
-				<div className="flex flex-wrap w-full">
+				<div className="flex flex-wrap w-full mb-20">
 					<div className="lg:w-2/5 md:w-1/2 md:pr-10 md:py-6">
 						<div className="flex relative pb-12">
 							<div className="h-full w-10 absolute inset-0 flex items-center justify-center">

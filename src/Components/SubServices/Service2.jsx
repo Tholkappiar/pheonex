@@ -1,8 +1,8 @@
 const Service2 = () => {
 	return (
-		<section className="text-gray-600 body-font">
+		<section className="text-gray-600 body-font mb-14">
 			<div className="container px-5 py-2 mx-auto">
-				<div className="flex flex-col text-center w-full mb-10">
+				<div className="flex flex-col text-center w-full">
 					<h2 className="text-xs text-indigo-500 tracking-widest font-medium title-font mb-1">
 					Crafting Engaging Digital Experiences
 					</h2>
@@ -14,10 +14,8 @@ const Service2 = () => {
 					interactive design services. Contact Pheonex today to discuss your project and see how 
 					we can bring your vision to life.
 					</p>
-
-
 				</div>
-				<div className="flex flex-wrap -m-4">
+				<div className="flex flex-wrap -m-4 mt-10">
 					<div className="p-4 md:w-1/3">
 						<div className="flex rounded-lg h-full bg-gray-100 p-8 flex-col">
 							<div className="flex items-center mb-3">

@@ -1,12 +1,11 @@
-import Service2 from "./Service2"
-import Service8 from "./Service8"
+import Service11 from "./Service11";
+import Service8 from "./Service8";
 
 export default function WebAndInteractive() {
   return (
     <div>
-     <Service8 />
-     <Service2 />
+      <Service8 />
+      <Service11 />
     </div>
-  )
+  );
 }
-
