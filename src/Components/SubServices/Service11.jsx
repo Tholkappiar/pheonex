@@ -1,3 +1,8 @@
+import serviceSection01 from "../../assets/images/serviceSection01.webp";
+import serviceSection02 from "../../assets/images/serviceSection02.webp";
+import serviceSection03 from "../../assets/images/serviceSection03.webp";
+import serviceSection04 from "../../assets/images/serviceSection04.webp";
+
 const Service11 = () => {
   return (
     <section className="text-gray-600 body-font">
@@ -21,7 +26,7 @@ const Service11 = () => {
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://dummyimage.com/720x400"
+                src={serviceSection01}
                 alt="content"
               />
               <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
@@ -40,7 +45,7 @@ const Service11 = () => {
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://dummyimage.com/721x401"
+                src={serviceSection02}
                 alt="content"
               />
               <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
@@ -59,7 +64,7 @@ const Service11 = () => {
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://dummyimage.com/722x402"
+                src={serviceSection03}
                 alt="content"
               />
               <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
@@ -78,7 +83,7 @@ const Service11 = () => {
             <div className="bg-gray-100 p-6 rounded-lg">
               <img
                 className="h-40 rounded w-full object-cover object-center mb-6"
-                src="https://dummyimage.com/723x403"
+                src={serviceSection04}
                 alt="content"
               />
               <h3 className="tracking-widest text-indigo-500 text-xs font-medium title-font">
