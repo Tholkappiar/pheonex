@@ -1,4 +1,4 @@
-import gifts from "../../assets/gifts.svg";
+import gifts from "../../assets/svgs/gifts.svg";
 import halfSpiral from "../../assets/images/halfSpiral.png";
 
 const Service5 = () => {

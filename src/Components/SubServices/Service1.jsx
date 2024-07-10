@@ -1,99 +1,145 @@
-const Service1 = () => {
-	const features = [
-		{
-			title: "Shooting Stars",
-			icon: (
-				<svg
-					fill="none"
-					stroke="currentColor"
-					strokeLinecap="round"
-					strokeLinejoin="round"
-					strokeWidth="2"
-					className="w-10 h-10"
-					viewBox="0 0 24 24"
-				>
-					<path d="M22 12h-4l-3 9L9 3l-3 9H2"></path>
-				</svg>
-			),
-		},
-		{
-			title: "The Catalyzer",
-			icon: (
-				<svg
-					fill="none"
-					stroke="currentColor"
-					strokeLinecap="round"
-					strokeLinejoin="round"
-					strokeWidth="2"
-					className="w-10 h-10"
-					viewBox="0 0 24 24"
-				>
-					<circle cx="6" cy="6" r="3"></circle>
-					<circle cx="6" cy="18" r="3"></circle>
-					<path d="M20 4L8.12 15.88M14.47 14.48L20 20M8.12 8.12L12 12"></path>
-				</svg>
-			),
-		},
-		{
-			title: "Neptune",
-			icon: (
-				<svg
-					fill="none"
-					stroke="currentColor"
-					strokeLinecap="round"
-					strokeLinejoin="round"
-					strokeWidth="2"
-					className="w-10 h-10"
-					viewBox="0 0 24 24"
-				>
-					<path d="M20 21v-2a4 4 0 00-4-4H8a4 4 0 00-4 4v2"></path>
-					<circle cx="12" cy="7" r="4"></circle>
-				</svg>
-			),
-		},
-	];
+import Masonry from "react-layout-masonry";
+import securesvg from "../../assets/svgs/secure.svg";
+import workers from "../../assets/svgs/workers.svg";
+import responsibility from "../../assets/svgs/responsibility.svg";
+import growth from "../../assets/svgs/growth.svg";
 
-	return (
-		<section className="text-gray-600 body-font">
-			<div className="container px-5 py-24 mx-auto">
-				<div className="text-center mb-20">
-					<h1 className="sm:text-3xl text-2xl font-medium title-font text-gray-900 mb-4">
-						Raw Denim Heirloom Man Braid
-					</h1>
-					<p className="text-base leading-relaxed xl:w-2/4 lg:w-3/4 mx-auto text-gray-500s">
-						Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-						taxidermy. Gastropub indxgo juice poutine, ramps microdosing banh mi
-						pug.
-					</p>
-					<div className="flex mt-6 justify-center">
-						<div className="w-16 h-1 rounded-full bg-indigo-500 inline-flex"></div>
-					</div>
-				</div>
-				<div className="flex flex-wrap sm:-m-4 -mx-4 -mb-10 -mt-4 md:space-y-0 space-y-6">
-					{features.map((feature, index) => (
-						<div
-							key={index}
-							className="p-4 md:w-1/3 flex flex-col text-center items-center"
-						>
-							<div className="w-20 h-20 inline-flex items-center justify-center rounded-full bg-indigo-100 text-indigo-500 mb-5 flex-shrink-0">
-								{feature.icon}
-							</div>
-							<div className="flex-grow">
-								<h2 className="text-gray-900 text-lg title-font font-medium mb-3">
-									{feature.title}
-								</h2>
-								<p className="leading-relaxed text-base">
-									Blue bottle crucifix vinyl post-ironic four dollar toast vegan
-									taxidermy. Gastropub indxgo juice poutine, ramps microdosing
-									banh mi pug VHS try-hard.
-								</p>
-							</div>
-						</div>
-					))}
-				</div>
-			</div>
-		</section>
-	);
+const Service1 = () => {
+  return (
+    <div className="pt-40 container mx-auto">
+      <div className="m-2">
+        <p className="p-2 md:w-1/2 text-lg font-semibold text-white bg-indigo-800 mx-auto rounded-lg text-center">
+          Software Development
+        </p>
+      </div>
+      <div className="flex justify-between my-20">
+        <div className="md:w-1/2 p-4">
+          <p className="text-xl font-semibold mt-10">Description</p>
+          <p className="indent-20 my-4 font-light leading-7">
+            Software development is the intricate process of designing,
+            creating, testing, and maintaining software applications and
+            systems. It begins with requirement analysis, where developers
+            understand the needs and objectives of users or clients. This is
+            followed by the design phase, where the architecture and components
+            of the software are planned. The implementation phase involves
+            writing the actual code using various programming languages. Once
+            the code is written, it undergoes thorough testing to identify and
+            fix any bugs, ensuring the software works correctly. After
+            successful testing, the software is deployed and made available for
+            use.
+          </p>
+          <div className="mt-20">
+            <div className="flex gap-10 items-center my-14">
+              <img src={securesvg} className="size-10" alt="" />
+              <div>
+                <p className="text-xl font-semibold">Planning</p>
+                <p className="my-2 font-light leading-7">
+                  The planning phase at Pheonex involves defining the project
+                  goals, scope, and requirements. We work closely with our
+                  clients to understand their needs, conduct feasibility
+                  studies, and create a comprehensive project plan. This phase
+                  is crucial for setting clear objectives, timelines, and
+                  resources needed for the project.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-10 items-center my-14">
+              <img src={workers} className="size-10" alt="" />
+              <div>
+                <p className="text-xl font-semibold">Design</p>
+                <p className="my-2 font-light leading-7">
+                  During the design phase, our developers create the
+                  architecture of the software. This includes designing the
+                  system structure, user interfaces, and database schema. We
+                  produce detailed design documents and prototypes to provide a
+                  clear blueprint for the development team, ensuring that the
+                  software structure and components are well-defined and aligned
+                  with client requirements. 3. Development
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-10 items-center my-14">
+              <img src={responsibility} className="size-10" alt="" />
+              <div>
+                <p className="text-xl font-semibold">Development</p>
+                <p className="my-2 font-light leading-7">
+                  In the development phase, the actual coding of the software
+                  begins. Our developers write the code according to the design
+                  specifications. This phase involves setting up the development
+                  environment, writing and compiling code, and integrating
+                  different modules. Regular testing and debugging are conducted
+                  to ensure the code functions correctly and meets the
+                  requirements.
+                </p>
+              </div>
+            </div>
+            <div className="flex gap-10 items-center my-14">
+              <img src={growth} className="size-10" alt="" />
+              <div>
+                <p className="text-xl font-semibold">Testing and Deployment</p>
+                <p className="my-2 font-light leading-7">
+                  The testing phase involves rigorous testing of the software to
+                  identify and fix any bugs or issues. Various types of testing,
+                  such as unit testing, integration testing, and user acceptance
+                  testing, are performed. Once the software passes all tests, it
+                  is deployed to the production environment. After deployment,
+                  the software is monitored for any post-release issues, and
+                  necessary updates and maintenance are performed.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div>
+            <p className="text-2xl font-Noto-Sans-JP font-bold text-indigo-600 mt-20">
+              Why Choose us?
+            </p>
+            <p className="font-Noto-Sans-JP leading-7 text-gray-600 tracking-wide my-10">
+              Choosing Pheonex means partnering with a team that is dedicated to
+              your success. Our client-focused approach ensures that we deliver
+              solutions that are not only technologically advanced but also
+              aligned with your business goals. We are committed to building
+              long-term relationships based on trust, transparency, and mutual
+              growth.
+            </p>
+            <a
+              href="/contact"
+              className="py-1 px-2 border-2 border-gray-200 font-Noto-Sans-JP text-gray-80000 inline-block rounded-xl text-sm"
+            >
+              Contact us and learn more on Socials
+            </a>
+          </div>
+        </div>
+        <div className="w-2/5 hidden md:block">
+          <Masonry
+            columns={{ 640: 1, 1024: 2, 1280: 2 }}
+            gap={16}
+            className="mt-10 sticky top-32"
+          >
+            <img
+              className="rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image.jpg"
+              alt=""
+            />
+            <img
+              className="rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg"
+              alt=""
+            />
+            <img
+              className="rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg"
+              alt=""
+            />
+            <img
+              className="rounded-lg"
+              src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-3.jpg"
+              alt=""
+            />
+          </Masonry>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Service1;

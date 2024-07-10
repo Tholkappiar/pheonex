@@ -1,10 +1,10 @@
 /* eslint-disable react/no-unescaped-entities */
-import Home from "../../assets/Home.svg";
-import bookmark from "../../assets/bookmark.svg";
-import person from "../../assets/person.svg";
-import world from "../../assets/world.svg";
-import message from "../../assets/messageArrow.svg";
-import reward from "../../assets/reward.svg";
+import Home from "../../assets/svgs/Home.svg";
+import bookmark from "../../assets/svgs/bookmark.svg";
+import person from "../../assets/svgs/person.svg";
+import world from "../../assets/svgs/world.svg";
+import message from "../../assets/svgs/messageArrow.svg";
+import reward from "../../assets/svgs/reward.svg";
 import service6Image from "../../assets/images/Service6-image.jpg";
 
 const Service6 = () => {
