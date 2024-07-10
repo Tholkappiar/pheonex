@@ -15,50 +15,55 @@ import TechnicalDocumentation from "./Components/SubServices/TechnicalDocumentat
 import ContentManagement from "./Components/SubServices/ContentManagement";
 
 function App() {
-	const ScrollToTop = (props) => {
-		const location = useLocation();
-		useEffect(() => {
-			window.scrollTo(0, 0);
-		}, [location]);
-		// eslint-disable-next-line react/prop-types
-		return <>{props.children}</>;
-	};
+  const ScrollToTop = (props) => {
+    const location = useLocation();
+    useEffect(() => {
+      window.scrollTo(0, 0);
+    }, [location]);
+    // eslint-disable-next-line react/prop-types
+    return <>{props.children}</>;
+  };
 
-	return (
-		// <BrowserRouter>
-		// 	<Navbar />
-		// 	<ScrollToTop>
-		// 		<Routes>
-		// 			<Route path="/" element={<HomePage />}></Route>
-		// 			<Route path="/service" element={<ServicePage />}></Route>
-		// 			<Route path="/contact" element={<ContactUs />}></Route>
-		// 			<Route path="/about" element={<AboutUs />}></Route>
-		// 			<Route path="*" element={<ErrorPage />} />
-		// 		</Routes>
-		// 	</ScrollToTop>
-		// 	<Footer />
-		// </BrowserRouter>
-		<BrowserRouter>
-			<Navbar />
-			<ScrollToTop>
-				<Routes>
-					<Route path="/" element={<HomePage />}></Route>
-					<Route path="/service" element={<ServicePage />}></Route>
-					<Route path="/contact" element={<ContactUs />}></Route>
-					<Route path="/about" element={<AboutUs />}></Route>
-					<Route path="*" element={<ErrorPage />} />
-					<Route path="/webApplication" element={<WebApplications/>} /> 
-					<Route path="/wi" element={<WebAndInteractive/>}/>
-					<Route path="/wp" element={<WebPromotions/>}/>
-					<Route path="/sd" element={<SoftwareDevelopment/>}/>
-					<Route path="/td" element={<TechnicalDocumentation/>}/>
-					<Route path="/cm" element={<ContentManagement/>}/>
-					
-				</Routes>
-			</ScrollToTop>
-			<Footer />
-		</BrowserRouter>
-	);
+  return (
+    // <BrowserRouter>
+    // 	<Navbar />
+    // 	<ScrollToTop>
+    // 		<Routes>
+    // 			<Route path="/" element={<HomePage />}></Route>
+    // 			<Route path="/service" element={<ServicePage />}></Route>
+    // 			<Route path="/contact" element={<ContactUs />}></Route>
+    // 			<Route path="/about" element={<AboutUs />}></Route>
+    // 			<Route path="*" element={<ErrorPage />} />
+    // 		</Routes>
+    // 	</ScrollToTop>
+    // 	<Footer />
+    // </BrowserRouter>
+    <BrowserRouter>
+      <Navbar />
+      <ScrollToTop>
+        <Routes>
+          <Route path="/" element={<HomePage />}></Route>
+          <Route path="/service" element={<ServicePage />}></Route>
+          <Route path="/contact" element={<ContactUs />}></Route>
+          <Route path="/about" element={<AboutUs />}></Route>
+          <Route path="*" element={<ErrorPage />} />
+          <Route path="/Web-Application" element={<WebApplications />} />
+          <Route path="/Web-Interactive" element={<WebAndInteractive />} />
+          <Route path="/Web-Promotions" element={<WebPromotions />} />
+          <Route
+            path="/Software-Development"
+            element={<SoftwareDevelopment />}
+          />
+          <Route
+            path="/Technical-Documentation"
+            element={<TechnicalDocumentation />}
+          />
+          <Route path="/Content-Management" element={<ContentManagement />} />
+        </Routes>
+      </ScrollToTop>
+      <Footer />
+    </BrowserRouter>
+  );
 }
 
 export default App;

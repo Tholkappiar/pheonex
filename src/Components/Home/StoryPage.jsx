@@ -4,27 +4,27 @@ const StoryPage = () => {
   const links = [
     {
       title: "Web & Interactive Design",
-      path: "/wi",
+      path: "/Web-Interactive",
     },
     {
       title: "Web Applications",
-      path: "/webApplication",
+      path: "/Web-Application",
     },
     {
       title: "Software Development",
-      path: "/sd",
+      path: "/Software-Development",
     },
     {
       title: "Technical Documentation",
-      path: "/td",
+      path: "/Technical-Documentation",
     },
     {
       title: "Web Promotions",
-      path: "/wp",
+      path: "/Web-Promotions",
     },
     {
       title: "Content Management",
-      path: "/cm",
+      path: "/Content-Management",
     },
   ];
 
