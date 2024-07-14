@@ -11,7 +11,7 @@ const ParallaxEffect = () => {
                     <span className="text-indigo-600">Digital</span> presence!
                 </p>
                 <Link to="/contact">
-                    <button className="w-32 text-sm md:w-52 bg-indigo-600 p-2 font-Noto-Sans-JP tracking-wider rounded-md my-8 hover:bg-opacity-90">
+                    <button className="w-32 md:w-52 text-sm sm:text-lg bg-indigo-600 p-2 font-Noto-Sans-JP tracking-wider rounded-md my-8 hover:bg-opacity-90">
                         CONTACT US
                     </button>
                 </Link>
