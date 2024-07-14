@@ -1,3 +1,5 @@
+import { Link } from "react-router-dom";
+
 const Hero = () => {
     return (
         <div className="min-h-screen flex items-center relative overflow-hidden select-none">
@@ -15,9 +17,11 @@ const Hero = () => {
                     thrive in the digital age. Our team of experts is ready to
                     turn your vision into reality.
                 </p>
-                <button className="p-2 my-10 font-mono font-medium sm:text-lg lg:text-xl bg-indigo-600 rounded-md shadow-lg w-36 sm:w-52 tracking-wider hover:opacity-90">
-                    EXPLORE US
-                </button>
+                <Link to="/about">
+                    <button className="p-2 my-10 font-mono font-medium sm:text-lg lg:text-xl bg-indigo-600 rounded-md shadow-lg w-36 sm:w-52 tracking-wider hover:opacity-90">
+                        EXPLORE US
+                    </button>
+                </Link>
             </div>
         </div>
     );
